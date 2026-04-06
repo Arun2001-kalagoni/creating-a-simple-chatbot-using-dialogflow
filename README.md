@@ -41,7 +41,7 @@ creating-a-simple-chatbot-using-dialogflow/
 │── package.json
 │── node_modules/
 
-How It Works
+##How It Works
 User sends a request through Dialogflow.
 The webhook receives the request at /dialogflow.
 The chatbot checks the account number in MongoDB.
@@ -67,19 +67,19 @@ date
 trouble_ticket
 Prerequisites
 
-Before running this project, make sure you have:
+##Before running this project, make sure you have:
 
 Node.js
 MongoDB
 A Dialogflow agent configured with fulfillment enabled
 ngrok (optional, for exposing localhost to Dialogflow) Installation
 
-Clone the repository:
+##Clone the repository:
 
 git clone https://github.com/Arun2001-kalagoni/creating-a-simple-chatbot-using-dialogflow.git
 cd creating-a-simple-chatbot-using-dialogflow
 
-Install dependencies:
+##Install dependencies:
 
 npm install
 Configuration
@@ -104,7 +104,7 @@ The server runs on:
 
 http://localhost:8080
 
-Webhook endpoint:
+##Webhook endpoint:
 
 http://localhost:8080/dialogflow
 Dialogflow Fulfillment Setup
@@ -114,7 +114,7 @@ Enable Webhook
 Add your webhook URL:
 https://your-ngrok-url/dialogflow
 
-Example with ngrok:
+##Example with ngrok:
 
 ngrok http 8080
 
@@ -151,13 +151,13 @@ user_issues
   "trouble_ticket": "ABC1234"
 }
 
-Notes
+##Notes
 MongoDB must be running before starting the app
 Dialogflow fulfillment must point to the correct webhook URL
 If testing locally, use ngrok for public access
 For production use, move database credentials and configuration into environment variables
 
-Possible Improvements
+##Possible Improvements
 Add .env support for database URL and port
 Improve input validation
 Add status tracking for existing trouble tickets
